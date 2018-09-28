@@ -29,5 +29,11 @@ namespace MVCAssignment1.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<MVCAssignment1.Models.Car> Cars { get; set; }
+
+        public System.Data.Entity.DbSet<MVCAssignment1.Models.House> Houses { get; set; }
+
+        public System.Data.Entity.DbSet<MVCAssignment1.Models.Person> People { get; set; }
     }
 }
